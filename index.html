@@ -2456,6 +2456,157 @@ a {
   font-weight: 300;
   font-size: 14px;
 }
+/* ===== ABOUT US PAGE THEME ===== */
+#page-about .about-hero .p-hero-img::after {
+  background: linear-gradient(to top, rgba(63,21,32,0.88) 0%, rgba(63,21,32,0.42) 38%, rgba(63,21,32,0.06) 58%, transparent 100%),
+              linear-gradient(to right, rgba(63,21,32,0.35) 0%, transparent 22%, transparent 78%, rgba(63,21,32,0.35) 100%);
+}
+
+#page-about .about-hero .p-hero-content .eyebrow {
+  color: #b87090;
+}
+
+#page-about .about-hero .p-hero-content h1 {
+  color: #ffffff;
+}
+
+#page-about .about-hero .p-hero-content h1 em {
+  color: #b87090;
+}
+
+#page-about .about-intro {
+  background: #ffffff;
+  padding: 100px 5vw;
+}
+
+#page-about .about-intro p {
+  color: #2a0a12;
+}
+
+#page-about .about-expertise {
+  background: #3f1520;
+  padding: 100px 5vw;
+}
+
+#page-about .about-expertise .eyebrow {
+  color: #b87090;
+}
+
+#page-about .about-expertise h2 {
+  color: #ffffff;
+}
+
+#page-about .expertise-item {
+  border-color: rgba(255,255,255,0.1);
+}
+
+#page-about .expertise-item:hover {
+  background: rgba(255,255,255,0.05);
+  box-shadow: -3px 0 0 #b87090;
+}
+
+#page-about .expertise-item h4 {
+  color: #ffffff;
+}
+
+#page-about .expertise-item .a-num {
+  color: #b87090;
+}
+
+#page-about .about-clients {
+  background: #ffffff;
+  padding: 100px 5vw;
+}
+
+#page-about .about-clients .eyebrow {
+  color: #7a3a50;
+}
+
+#page-about .about-clients h2 {
+  color: #3f1520;
+}
+
+#page-about .clients-lead {
+  color: #2a0a12;
+}
+
+#page-about .client-item {
+  border-color: rgba(63,21,32,0.12);
+  color: #3f1520;
+}
+
+#page-about .client-item:hover {
+  border-color: #7a3a50;
+  color: #7a3a50;
+  background: rgba(122,58,80,0.06);
+}
+
+#page-about .about-philosophy {
+  background: #3f1520;
+  border-top-color: rgba(255,255,255,0.08);
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+#page-about .about-philosophy .eyebrow {
+  color: #b87090;
+}
+
+#page-about .philosophy-content blockquote {
+  border-left-color: #b87090;
+  border-right-color: #b87090;
+  background: rgba(255,255,255,0.04);
+}
+
+#page-about .philosophy-content blockquote p {
+  color: rgba(255,255,255,0.92);
+}
+
+#page-about .philosophy-close {
+  color: rgba(255,255,255,0.7);
+}
+
+#page-about .p-cta {
+  background: #ffffff;
+  padding: 100px 5vw;
+  max-width: none;
+}
+
+#page-about .p-cta .p-cta-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#page-about .p-cta .eyebrow {
+  color: #7a3a50;
+}
+
+#page-about .p-cta h2 {
+  color: #3f1520;
+}
+
+#page-about .p-cta .btn-outline {
+  border-color: #3f1520;
+  color: #3f1520;
+}
+
+#page-about .p-cta .btn-outline:hover {
+  background: #3f1520;
+  border-color: #3f1520;
+  color: #ffffff;
+}
+
+#page-about .breadcrumb {
+  background: #3f1520;
+  color: rgba(255,255,255,0.6);
+}
+
+#page-about .breadcrumb a {
+  color: rgba(255,255,255,0.75);
+}
+
+#page-about .breadcrumb a:hover {
+  color: #b87090;
+}
 </style>
 </head>
 <body class="loading">
@@ -3065,9 +3216,11 @@ a {
   </section>
 
   <section class="p-cta">
-    <span class="eyebrow">Get in Touch</span>
-    <h2>Let's build something exceptional together.</h2>
-    <a href="#contact" onclick="goHome(event,'contact')" class="btn-outline" style="border-color:var(--ink);color:var(--ink);">Contact Us →</a>
+    <div class="p-cta-inner">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Let's build something exceptional together.</h2>
+      <a href="#contact" onclick="goHome(event,'contact')" class="btn-outline">Contact Us →</a>
+    </div>
   </section>
 </div>
 
