@@ -2570,6 +2570,64 @@ a {
   opacity: 0.85;
   text-decoration: underline;
 }
+/* ===== EXPERTISE SECTION ===== */
+.expertise {
+  background: linear-gradient(165deg, var(--vine-bg-soft) 0%, var(--vine-bg) 50%, var(--vine-deep) 100%);
+  padding: 100px 5vw;
+}
+
+.expertise .section-head {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.expertise-list .expertise-item {
+  padding: 28px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expertise-list .expertise-item:hover {
+  background: var(--vine-overlay);
+  transform: translateX(6px);
+  border-color: rgba(201, 169, 98, 0.15);
+  box-shadow: -3px 0 0 var(--vine-rose);
+}
+
+.expertise-list .expertise-item h4 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .expertise-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .expertise {
+    padding: 70px 6vw;
+  }
+}
 /* ===== ABOUT US PAGE ===== */
 .about-hero {
   height: 70vh;
@@ -3734,8 +3792,8 @@ a {
   <nav class="links" id="navLinks">
     <a href="#home" onclick="goHome(event)">Home</a>
     <a href="#properties" onclick="goHome(event,'properties')">Properties</a>
-    <a href="#communities" onclick="goHome(event,'communities')">Communities</a>
-    <a href="#about" onclick="goPage(event,'about')">About</a>
+<a href="#expertise" onclick="goHome(event,'expertise')">Expertise</a>
+<a href="#communities" onclick="goHome(event,'communities')">Communities</a>    <a href="#about" onclick="goPage(event,'about')">About</a>
   </nav>
   <a href="#contact" onclick="goPage(event,'contact')" class="nav-cta">Contact</a>
   <button type="button" class="menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
@@ -3751,7 +3809,6 @@ a {
     <video id="heroVideo" muted loop playsinline webkit-playsinline autoplay preload="metadata" poster="hero-poster.jpg" aria-hidden="true"></video>
   </div>
   <div class="hero-content">
-    <span class="eyebrow">Islamabad · Luxury Living</span>
     <h1>A vision built <em>beyond</em> the skyline.</h1>
     <p>JAYKHAN DEVELOPMENTS | A real estate & infrastructure development firm based in capital Islamabad |Pakistan|  — Where architecture, craftsmanship and considered living meet.</p>
     <a href="#about" class="btn-outline">Discover Our Story →</a>
@@ -3782,7 +3839,6 @@ a {
       <div class="p-overlay">
         <span class="p-tag">Luxury Estate</span>
         <h3>Serene Nova by JKD</h3>
-        <p class="p-loc">D-17, Islamabad · 600 Sq. Yds</p>
         <span class="p-link">View Property →</span>
       </div>
       <span class="p-corner">↗</span>
@@ -3908,6 +3964,31 @@ a {
     </div>
   </div>
 </section>
+<section class="expertise" id="expertise">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">What We Do</span>
+      <h2>Our Expertise</h2>
+    </div>
+    <p>Comprehensive capabilities across the full development lifecycle — from concept to completion.</p>
+  </div>
+  <div class="expertise-list">
+    <div class="expertise-item"><span class="a-num">01</span><h4>Real Estate Development</h4></div>
+    <div class="expertise-item"><span class="a-num">02</span><h4>Luxury Residential Construction</h4></div>
+    <div class="expertise-item"><span class="a-num">03</span><h4>Commercial Construction</h4></div>
+    <div class="expertise-item"><span class="a-num">04</span><h4>Infrastructure Development</h4></div>
+    <div class="expertise-item"><span class="a-num">05</span><h4>Turnkey Design & Build</h4></div>
+    <div class="expertise-item"><span class="a-num">06</span><h4>Refurbishment & Renovations</h4></div>
+    <div class="expertise-item"><span class="a-num">07</span><h4>Interior Fit-Outs</h4></div>
+    <div class="expertise-item"><span class="a-num">08</span><h4>Project Management</h4></div>
+    <div class="expertise-item"><span class="a-num">09</span><h4>Structural Strengthening</h4></div>
+    <div class="expertise-item"><span class="a-num">10</span><h4>Architectural & Engineering Consultancy</h4></div>
+  </div>
+</section>
+
+<svg class="tide" viewBox="0 0 1400 90" preserveAspectRatio="none">
+  <path d="M0,45 C 150,10 300,80 450,45 C 600,10 750,80 900,45 C 1050,10 1200,80 1400,45"/>
+</svg>
 
 <section class="communities" id="communities">
   <div class="section-head">
@@ -3985,7 +4066,6 @@ a {
           <ul class="catalog-specs">
             <li><span>Plot Size</span><strong>600 Sq. Yds</strong></li>
             <li><span>Bedrooms</span><strong>7 Suites</strong></li>
-            <li><span>Starting From</span><strong>PKR 11 Crore</strong></li>
             <li><span>Highlight</span><strong>Private Lift</strong></li>
           </ul>
           <div class="catalog-actions">
@@ -4014,7 +4094,6 @@ a {
           <ul class="catalog-specs">
             <li><span>Plot Size</span><strong>2000 Sq. Yds</strong></li>
             <li><span>Bedrooms</span><strong>8 Suites</strong></li>
-            <li><span>Starting From</span><strong>PKR 1.65 Billion</strong></li>
             <li><span>Highlight</span><strong>Private Lap Pool</strong></li>
           </ul>
           <div class="catalog-actions">
@@ -4108,7 +4187,6 @@ a {
     <div class="spec-list">
       <div class="spec-row"><span>Estate Type</span><span>7 Bedroom Luxury Residence</span></div>
       <div class="spec-row"><span>Plot Size</span><span>600 Sq. Yds</span></div>
-      <div class="spec-row"><span>Starting From</span><span>PKR 11 Crore</span></div>
       <div class="spec-row"><span>Location</span><span>D-17, Islamabad</span></div>
       <div class="spec-row"><span>Lift</span><span>Private Elevator</span></div>
       <div class="spec-row"><span>Proximity</span><span>Commercial &amp; Community Centre</span></div>
@@ -4192,7 +4270,6 @@ a {
     <div class="spec-list">
       <div class="spec-row"><span>Estate Type</span><span>8 Bedroom Masterpiece Villa</span></div>
       <div class="spec-row"><span>Plot Size</span><span>2000 Sq. Yds</span></div>
-      <div class="spec-row"><span>Starting From</span><span>PKR 1.65 Billion</span></div>
       <div class="spec-row"><span>Location</span><span>F-8, Islamabad</span></div>
       <div class="spec-row"><span>Pool</span><span>Private Lap Pool &amp; Aquatic Suite</span></div>
       <div class="spec-row"><span>Lift</span><span>Private Elevator</span></div>
@@ -4604,7 +4681,8 @@ a {
       <h4>Quick Links</h4>
       <a href="#home" onclick="goHome(event)">Home</a>
       <a href="#about" onclick="goPage(event,'about')">About Us</a>
-      <a href="#communities" onclick="goHome(event,'communities')">Communities</a>
+      <a href="#expertise" onclick="goHome(event,'expertise')">Expertise</a>
+<a href="#communities" onclick="goHome(event,'communities')">Communities</a>
       <a href="#all-properties" onclick="goPage(event,'all-properties')">Properties</a>
       <a href="#contact" onclick="goPage(event,'contact')">Contact Us</a>
     </div>
